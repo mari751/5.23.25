@@ -1,0 +1,1187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family:roboto;
+    src: url(/fonts/WixMadeforTextVF_W_Wght.8022447a.woff2);
+}
+
+@font-face {
+    font-family:Oswald;
+    src: url(/fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: open-sans;
+  src: url(/open\ sans.woff2);
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #000000;
+}
+
+a, li, img{
+    border: none !important;
+}
+
+.nav-list, .adress, .cart-login-container{
+    color: white;
+    font-family: roboto;
+    font-weight: 300;
+}
+
+.nav-list{
+    display: flex;
+    gap: 2vw;
+}
+
+a{
+    color: white;
+}
+
+.hamburger{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.cart-login-container{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.cart-img{
+    width: 25px;
+}
+
+.intro-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.218), rgba(255, 255, 255, 0.133)), url('/images/9c608a_1d105a52d5834dfa98f0ead7697277f7.avif');
+    background-size: cover;
+    filter: brightness(1.1) saturate(0.8);
+    background-attachment: fixed;
+}
+
+.intro-text-container, .autro-container{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1;
+  }
+
+.Title1, .autro-container h1{
+    font-family:Oswald;
+    font-weight: 700;
+    font-size: 12vw;
+}
+
+.breadP, h2, .aboutbakerytitle, .Gluten-Free h1, .autro-container p{
+    font-family:Oswald;
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+.breadP{
+    margin-top: -3vw;
+}
+
+.advertisement-container{
+    height: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    z-index: 2;
+    background-color: white;
+}
+
+.advertisement-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+;
+}
+
+.advertisement-item img{
+    width: 21vw;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6vw;
+}
+.order-online-button, .About-bakery button, .Gluten-Free button, .contact-form button{
+    display: flex;
+    width: 12vw;
+    height: 2.5vw;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 1.5vw;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.itemsP{
+    font-family:Oswald;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+
+.background-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    object-fit: cover
+}
+
+.video-container {
+    width: 100%;
+    height: 50vw;
+    z-index: -1;
+    /* overflow: hidden; */
+}
+
+.About-bakery{
+    background-color: white;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.About-bakery img{
+    width: 31vw;
+    height: 40vw;
+}
+
+.aboutbakery1, .Gluten-Free1{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.aboutbakerytitle, .Gluten-Free h1{
+    font-size: 2.5vw;
+}
+
+.About-bakery p, .Gluten-Free p{
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(75, 75, 75);
+    font-size: 1vw;
+    width: 27vw;
+}
+
+.Gluten-Free{
+    background-color: white;
+    height: 41.5vw;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.Gluten-Free img{
+    width: 49vw;
+    height: 41.5vw;
+}
+
+.autro-container{
+    background-image: url(/images/9c608a_90d745578a2545719165d1c5ef32e2a8.avif);
+    height: 50vw;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.autro-container h1{
+    margin-top: -3vw;
+}
+
+.Subscribe{ 
+    height: 20vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+.socials{
+    height: 10vw;
+    background-color: black;
+    color: white;
+}
+
+.email-input{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    width: 42vw;
+}
+
+.email-input input[type="email"]{
+    border: 0.1vw solid;
+    border-color: black black white black;
+    background-color: black;
+    outline: none;
+    color: white;
+}
+
+.Subscribe h1{
+    text-align: center;
+    font-family: Oswald;
+    font-size: 2vw;
+
+}
+
+.checkbox-input{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vw;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+.checkbox-input label{
+    font-size: 1vw;
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.cyberpunk-checkbox {
+    appearance: none;
+    width: 1.5vw;
+    height: 1.5vw;
+    border: 0.1vw solid #ffffff;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-right: 0.3vw;
+    cursor: pointer;
+  }
+  
+  .cyberpunk-checkbox:before {
+    content: "";
+    background-color: #ffffff;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 1vw;
+    height: 1vw;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cyberpunk-checkbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .cyberpunk-checkbox-label {
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+  }
+
+.checkbox-input button{
+    width: 9vw;
+    height: 2.5vw;
+    font-size: 1vw;
+    transition: all 0.3s ease;
+}
+
+.checkbox-input button:hover{
+    background-color: black;
+    color: white;
+    border: 0.1vw solid white;
+}
+
+label{
+    font-size: 1vw;
+}
+
+form h1{
+    font-size: 2vw;
+    font-family: oswald;
+    font-weight: 400;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    text-align: center;
+}
+
+.socials img{
+    width: 3vw;
+    height: 3vw;
+}
+
+.socials p{
+    font-size: 1vw;
+}
+
+
+                                      /* ABOUT-PAGE STYLE STARTING  */
+.about-bakery2{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5vw;
+    align-items: center;
+}
+
+.about-text2, .products-text{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    width: 22vw;
+}
+
+.about-text2 h1, .products-text h1, .mobile-only{
+    font-family: oswald;
+    font-weight: 550;
+    font-size: 2vw;
+    display: block;
+}
+
+.about-text2 p, .products-text p{
+    font-family: roboto;
+    font-weight: 200;
+    font-size: 1vw;
+    line-height: 1.4;
+
+}
+
+.about-bakery2 img{
+    width: 52vw;
+    height: 41vw;
+}
+
+.about-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin-left: 11vw;
+}
+
+.cookie-about{
+    width: 32vw;
+    height: 41vw;
+}
+
+.mobile-only{
+  display: none;
+  font-size: 7vw;
+  align-self: start;
+}
+
+                                          /* Third page styling :D */
+
+.menu-entrance{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vw;
+  gap: 3vw;
+}
+
+.menu-text, .bread-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menu-text h2, .bread-text h1{
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.menu-text p, .bread-text p{
+  font-family: open-sans;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.main-title{
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.bagel-menu, .bread-menu{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 17vw;
+  justify-content: center;
+}
+
+.plain-bagel, .sesame-bagel, .sunflower-bagel, .poppy-bagel, .wheat-bagel, .whole-seeds-bagel, .sourdough-bread, .grain-bread, .wheat-bread, .challa-bread{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 calc(33.33% - 30px);
+  padding: 0 0 5vw 0;
+}
+
+.plain-bagel img, .sesame-bagel img, .sunflower-bagel img, .poppy-bagel img, .wheat-bagel img, .whole-seeds-bagel img, .sourdough-bread img, .grain-bread img, .wheat-bread img, .challa-bread img{
+  width: 250px;
+  height: 250px;
+}
+
+.plain-bagel p, .sesame-bagel p, .sunflower-bagel p, .poppy-bagel p, .wheat-bagel p, .whole-seeds-bagel p, .sourdough-bread p, .grain-bread p, .wheat-bread p, .challa-bread p{
+  font-family: open-sans;
+  font-weight: 300;
+  width: 255px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.plain-bagel h3, .sesame-bagel h3, .sunflower-bagel h3, .poppy-bagel h3, .wheat-bagel h3, .whole-seeds-bagel h3, .sourdough-bread h3, .grain-bread h3, .wheat-bread h3, .challa-bread h3{
+  font-family: open-sans;
+  font-weight: 500;
+  text-align: center;
+}
+
+.whole-seeds-bagel h3::before, .sunflower-bagel h3::before{
+  content: '★';
+  color: black;
+}
+
+.challa-bread{
+  display: flex;
+  align-items: baseline;
+}
+
+.challa-bread-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 255px;
+}
+
+.challa-price{
+  display: flex;
+  width: 255px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+                                               /* fourth page stylingg */
+
+.contact-info{
+  display: flex;
+  justify-content: center;
+  gap: 7vw;
+  height: 50vw;
+}
+
+.contact-info1{
+  display: flex;
+  flex-direction:column;
+  gap: 2vw;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title-container{
+  height: 10vw;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.35vw 0;
+}
+
+.title-container h1{
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 2vw;
+}
+
+.form-top{
+  display: flex;
+  gap: 1.35vw;
+}
+
+.first-input, .last-input, .email, .message{
+  border-radius: 0;
+  border: 1px solid black;
+}
+
+.first-input, .last-input{
+  height: 2.69vw;
+  width: 10.77vw;
+}
+
+.Email-input, .First-name, .Last-name, .email, .message-input{
+  display: flex;
+  flex-direction: column;
+}
+
+.Email-input label, .First-name label, .Last-name label, .email label, .message-input label{
+  font-family: Oswald;
+  font-weight: 320;
+  letter-spacing: 1px;
+}
+
+
+.email{
+  height: 2.69vw;
+  width: 22.88vw;
+}
+
+.message{
+  width: 22.88vw;
+  height: 5.38vw;
+}
+
+.contact-info img{
+  height: fit-content;
+  width: 30vw;
+}
+
+.contact-form button{
+  width: 10vw;
+  padding: 0;
+}
+
+.button-form{
+  display: flex;
+  justify-content: flex-end;
+  width: 22.88vw;
+}
+
+.contact-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 1vw;
+}
+
+.small-contact-text p, .hoursP-container p, .adress-text p{
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 1vw;
+}
+
+iframe{
+  width: 32vw;
+  height: 32vw;
+}   
+
+.adress-hours{
+  display: flex;
+  justify-content: center;
+  gap: 7vw;
+  align-items: center;
+}
+
+.adress-text-container, .adress-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+
+.adress-text-container h1, .contact-phone{
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 2vw;
+  letter-spacing: 0.5px;
+}
+
+.contact-phone{
+  display: none;
+}
+
+@media screen and (max-width: 920px){
+    .email-input label{
+        font-size: 2vw;
+    }
+
+    form h1{
+        font-size: 3vw;
+    }
+}
+
+
+@media screen and (max-width: 852px){
+    .hamburger{
+        display: block;
+        margin-left: 1vw;
+    }
+    .nav-list{
+        display: none;
+        flex-direction: column;
+    }
+    .menu-toggle:checked + .hamburger + .nav-list{
+        display: flex;
+        margin-left:1vw;
+    }
+
+    .background-video{
+        position: relative
+    }
+
+    .checkbox-input button{
+        width: 9.5vw;
+        height: 3vw;
+        font-size: 1.5vw;
+    }
+
+    .autro-container, .intro-container{
+        background-attachment: scroll;
+    }
+
+    .header-container{
+        justify-content: space-between;
+    }
+
+    .cart-login-container{
+        gap: 20px;
+    }
+
+    .cart-login-container p{
+        font-size: 14px;
+    }
+
+    
+
+
+}
+
+@media screen and (max-width:772px){
+  .plain-bagel p, .sesame-bagel p, .sunflower-bagel p, .poppy-bagel p, .wheat-bagel p, .whole-seeds-bagel p, .sourdough-bread p, .grain-bread p, .wheat-bread p, .challa-bread p{
+    width: 200px;
+    font-size: 10px;
+  }
+
+  .challa-bread-title{
+    width: 200px;
+  }
+
+  .plain-bagel img, .sesame-bagel img, .sunflower-bagel img, .poppy-bagel img, .wheat-bagel img, .whole-seeds-bagel img, .sourdough-bread img, .grain-bread img, .wheat-bread img, .challa-bread img{
+    width: 180px;
+    height: 180px;
+  }
+  
+  .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  .plain-bagel h3, .sesame-bagel h3, .sunflower-bagel h3, .poppy-bagel h3, .wheat-bagel h3, .whole-seeds-bagel h3, .sourdough-bread h3, .grain-bread h3, .wheat-bread h3, .challa-bread h3{
+    font-size: 14px;
+  }
+
+  .Email-input label, .First-name label, .Last-name label, .email label, .message-input label, .small-contact-text p, .hoursP-container p, .adress-text p, .contact-text p{
+    font-size: 1.5vw;
+  }
+
+  .contact-info img{
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width:606px){
+  .plain-bagel p, .sesame-bagel p, .sunflower-bagel p, .poppy-bagel p, .wheat-bagel p, .whole-seeds-bagel p, .sourdough-bread p, .grain-bread p, .wheat-bread p, .challa-bread p{
+    width: 150px;
+    font-size: 10px;
+  }
+
+  .challa-bread-title, .challa-price{
+    width: 150px;
+  }
+
+  .plain-bagel img, .sesame-bagel img, .sunflower-bagel img, .poppy-bagel img, .wheat-bagel img, .whole-seeds-bagel img, .sourdough-bread img, .grain-bread img, .wheat-bread img, .challa-bread img{
+    width: 150px;
+    height: 150px;
+  }
+  
+  .plain-bagel h3, .sesame-bagel h3, .sunflower-bagel h3, .poppy-bagel h3, .wheat-bagel h3, .whole-seeds-bagel h3, .sourdough-bread h3, .grain-bread h3, .wheat-bread h3, .challa-bread h3{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-list {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      flex-direction: column;
+      padding: 60px 20px;
+      gap: 20px;
+      z-index: 2;
+      animation: slideIn 0.3s forwards;
+    }
+  
+    @keyframes slideIn {
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 0;
+      }
+    }
+
+  
+    .menu-toggle:checked + .hamburger + .nav-list {
+      animation: slideIn 0.3s forwards;
+      margin-left:0;
+      position: fixed;
+    }
+  
+    .hamburger {
+      display: block;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      position: sticky;
+      z-index: 3;
+      margin-left: 0;
+    }
+
+    .menu-toggle:checked + .hamburger{
+        position: fixed;
+        top: 20px;
+        left: 20px;
+    }
+
+    .nav-list::after {
+        content: "500 TERRY FRANCINE ST. SF, CA 94158\ALog In";
+        white-space: pre-line;
+        color: white;
+        font-family: roboto;
+        font-weight: 300;
+        margin-top: 40px;
+        display: block;
+      }
+      
+      .nav-list::before {
+        content: "";
+        display: block;
+        background-image: url('/images/download.jfif');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+      }
+
+      .intro-container{
+        height: 507px;
+        align-items: flex-start;
+        background-position: center center;
+        display: flex;
+      }
+
+      .autro-container {
+        height: 507px;
+        background-position: center center;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+
+      .intro-container h1, .autro-container h1{
+        font-size: 76px;
+      }
+
+      .intro-text-container p, .autro-container p{
+        font-size: 18px;
+      }
+
+      .advertisement-container{
+        height: 1200px;
+      }
+
+      .advertisement-container, .advertisement-item, .items{
+        flex-direction: column;
+      }
+
+      .itemsP{
+        font-size: 24px;
+      }
+
+      .advertisement-container h2{
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .items img{
+        width: 100%;
+        height: 290px;
+      }
+
+      .order-online-button{
+        width: 190px;
+        height: 40px;
+        font-size: 15px;
+      }
+
+      .About-bakery, .aboutbakery1, .Gluten-Free, .Gluten-Free1{
+        flex-direction: column;
+      }
+
+      .About-bakery{
+        height: auto;
+        padding: 30px 0 40px 0;
+      }
+
+      .Gluten-Free{
+        height: auto;
+      }
+
+      .About-bakery img{
+        width: 100%;
+        height: 100vw;
+      }
+
+      .aboutbakery1 h1, .Gluten-Free1 h1{
+        font-size: 35px;
+      }
+
+      .aboutbakery1 p, .Gluten-Free1 p{
+        font-size: 15px;
+        width: auto;
+      }
+
+      .aboutbakery1 button, .Gluten-Free1 button {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+      }
+
+      .Gluten-Free img{
+        order: 2;
+        width: 100%;
+        height: 60vw;
+      }
+
+      .Gluten-Free1{
+        order: 1;
+      }
+
+      .Subscribe{
+        height: 300px;
+      }
+      .socials{
+        height: 150px;
+      }
+
+      .Subscribe h1{
+        font-size: 26px;
+      }
+
+      .socials img{
+        width: 40px;
+        height: 40px;
+      }
+
+      .socials p{
+        font-size: 15px;
+      }
+
+      .email-input{
+        width: 90vw;
+      }
+
+      .email-input label, .checkbox-input label{
+        font-size: 16px;
+      }
+
+      .checkbox-input button{
+        align-items: flex-start;
+        width: 90vw;
+        height: 10vw;
+        font-size: 13px;
+        transition: all 0.3s ease;
+    }
+
+    .checkbox-input {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3vw;
+
+      }
+
+      .cyberpunk-checkbox {
+        width: 3vw; 
+        height: 3vw;
+        border: 0.2vw solid #ffffff;
+    }
+    
+    .cyberpunk-checkbox:before {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .cyberpunk-checkbox-label {
+        font-size: 3vw !important;
+        color: #fff;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        align-items: center;
+    }
+
+    /* second page styling */
+
+    .about-bakery2, .about-products{
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+    }
+
+    .mobile-only{
+      display: block;
+    }
+
+    .about-text2, .products-text{
+      width: auto;
+    }
+
+    .about-text2 h1{
+      display: none;
+    }
+
+    .about-crossant, .about-products img{
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    .about-textP, .about-textP1, .products-text p{
+      width: 100%;
+      height: auto;
+      font-size: 4.5vw !important;
+      opacity: 1;
+      color: black;
+    }
+
+    .products-text{
+      width: 100% !important;
+      order: 2;
+    }
+
+    .products-text h1{
+      font-size: 7vw;
+      align-self: start;
+    }
+
+    .about-products img{
+      width: 100% !important;
+    }
+
+                                                     /* third page styling */
+    .plain-bagel img, .sesame-bagel img, .sunflower-bagel img, .poppy-bagel img, .wheat-bagel img, .whole-seeds-bagel img, .sourdough-bread img, .grain-bread img, .wheat-bread img, .challa-bread img{
+      width: 90vw;
+      height: auto;
+    }
+  
+    .plain-bagel h3, .sesame-bagel h3, .sunflower-bagel h3, .poppy-bagel h3, .wheat-bagel h3, .whole-seeds-bagel h3, .sourdough-bread h3, .grain-bread h3, .wheat-bread h3, .challa-bread h3{
+      font-size: 22px;
+    }
+  
+    .plain-bagel p, .sesame-bagel p, .sunflower-bagel p, .poppy-bagel p, .wheat-bagel p, .whole-seeds-bagel p, .sourdough-bread p, .grain-bread p, .wheat-bread p, .challa-bread p{
+      font-size: 18px;
+      width: auto;
+    }
+
+    .challa-bread-title{
+      width: 90vw;
+    }
+
+    .challa-price{
+      width: 100vw;
+    }
+  
+                                                       /* fourth page styling */
+
+    .contact-phone{
+      display: block;
+      order: 1;
+      font-size: 6vw;
+      padding: 3vw 3vw 0;
+    }
+
+    .contact-info{
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+    }
+
+    .contact-info1{
+      order: 3;
+    }
+
+    .contact-info img{
+      order: 2;
+      width: 90vw;
+      height: auto;
+    }
+
+    .first-input, .last-input, .email, .message, .submit{
+      width: 90vw;
+      gap: 10px;
+    }
+
+    .form-top{
+      flex-direction: column;
+      gap: 3vw;
+    }
+
+    .first-input, .last-input, .email{
+      height: 15vw;
+      border: 1px solid rgb(42, 41, 41);
+    }
+
+    .Email-input label, .First-name label, .Last-name label, .email label, .message-input label{
+      font-size: 4vw;
+      font-weight: 400;
+    }
+
+    .title-container h1{
+      display: none;
+      font-size: 0;
+    }
+
+    .contact-text p{
+      font-size: 4vw;
+    }
+
+    .contact-text{
+      padding: 5vw 0;
+    }
+
+    .title-container{
+      height: 0;
+    }
+
+    .message{
+      height: 25vw;
+    }
+
+    .small-contact-text p{
+      font-size: 4vw;
+    }
+
+    .adress-hours{
+      flex-direction: column;
+      padding: 10vw 5vw;
+    }
+
+    .adress-text-container{
+      order: 1;
+    }
+
+    iframe{
+      order: 2;
+    }
+
+    .adress-text-container h1{
+      font-size: 7vw;
+    }
+
+    .button-form{
+      width: 90vw;
+    }
+
+    .button-form button{
+      width: 90vw;
+      height: 12vw;
+      font-size: 4vw;
+    }
+
+    .adress-text{
+      gap: 5vw;
+    }
+
+    .adress-text p{
+      font-size: 4vw;
+    }
+
+    iframe{
+      width: 90vw;
+      height: 90vw;
+    }
+
+
+  }
+
+  @media screen and (max-width: 379px) {
+    .log-in{
+        display: none;
+    }
+
+    .cart-login-container img{
+        width: 40px;
+    }
+  }
+
+
+  @media screen and (max-width:290px) {
+    .cart-login-container p{
+        display: none;
+    }
+
+    .items img{
+      width: 190px;
+    }
+  }
